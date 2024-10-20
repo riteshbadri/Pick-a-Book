@@ -24,6 +24,7 @@ public class UserController {
     }
 
     // get user by id REST API
+    // this comment to test if git working
     @GetMapping(path = "/{id}")
     public ResponseEntity<UserDto> getUserById(@PathVariable Long id) {
         UserDto userDto = userService.getUserById(id);
